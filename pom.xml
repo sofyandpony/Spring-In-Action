@@ -43,6 +43,7 @@
                 <configuration>
                     <executable>true</executable>
                     <addResources>true</addResources>
+                    <mainClass>com.upraxis.msinaction.Starter</mainClass>
                 </configuration>
             </plugin>
         </plugins>
