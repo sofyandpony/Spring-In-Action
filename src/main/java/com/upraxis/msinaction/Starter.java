@@ -3,12 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com;
+package com.upraxis.msinaction;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  *
- * @author developer
+ * @author Jesse Ballera
  */
+@SpringBootApplication
 public class Starter {
     
+    public static void main(String[] args) {
+        SpringApplication.run(Starter.class, args);
+    }
 }
