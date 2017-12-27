@@ -3,15 +3,6 @@
     <appender name="consoleAppender" class="ch.qos.logback.core.ConsoleAppender">
         <target>System.out</target>
         <encoding>UTF-8</encoding>
-        <!--        <filter class="ch.qos.logback.classic.filter.LevelFilter">
-            <level>INFO</level>
-            <onMatch>ACCEPT</onMatch>
-            <onMismatch>DENY</onMismatch>
-        </filter>
-        <encoder>
-            <pattern>[%d{yyyy-MM-dd HH:mm:ss.SSS}] [%level] %msg%n</pattern>
-            <pattern>%date{ISO8601} %X{sessionid}-%X{user} %caller{1} %-4level: %message%n</pattern>
-        </encoder>-->
         <layout class="ch.qos.logback.classic.PatternLayout">
             <pattern>%d %-4relative [%thread] %-5level %logger{35} - %msg%n</pattern>
         </layout>
@@ -52,7 +43,7 @@
     
     <appender name="errorFileAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>${LOG_DIR}${LOG_NAME_ERROR}.log</file>
-        <filter class="com.primesoft.dms.api.util.LevelRangeFilter">
+        <filter class="com.upraxis.msinaction.utils.LevelRangeFilter">
             <levelMin>WARN</levelMin>
             <levelMax>ERROR</levelMax>
         </filter>
