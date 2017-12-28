@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.upraxis.msinaction.web.repository.cassandra;
+package com.upraxis.registry.account.web.repository;
 
-import com.upraxis.msinaction.web.domain.Users;
+import com.upraxis.registry.account.web.domain.Users;
 import java.util.UUID;
 import org.springframework.data.repository.CrudRepository;
 

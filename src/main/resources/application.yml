@@ -9,7 +9,7 @@ spring:
 
 logback:
     log:
-        directory: /logs/tomcat/msi/
+        directory: /logs/tomcat/registry/accountGateway/
         logFileName: logs
         logFileError: logs_error
         fileDirectory: conf/logback.xml
